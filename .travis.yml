@@ -1,3 +1,4 @@
+github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
 language: python
   python:
 - "3.7"
