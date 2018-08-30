@@ -1,4 +1,13 @@
-github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+deploy:
+   provider: pages
+   skip-cleanup: true
+   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+   keep-history: true
+   local-dir: automation-v1
+   target-branch: automation-v1
+   on:
+     branch: master
+
 language: python
   python:
 - "3.7"
