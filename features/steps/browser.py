@@ -6,9 +6,12 @@ def get_browser(context):
     pass
 
 
-@when('set resolution')
-def set_resolution(context):
-    context.webdriver.set_window_size(800, 600)
+@when('browser set {resolution} resolution')
+def set_resolution(context, resolution):
+    res_list = resolution.rsplit(',')
+    context.width = int(res_list[0])
+    context.height = int(res_list[1])
+    context.webdriver.set_window_size(context.width, context.height)
 
 
 @then('resolution is set')
@@ -19,10 +22,10 @@ def verify_resolution(context):
 
     errors = []
 
-    if width != 800:
-        errors.append(u'With is {} expecting 800'.format(width))
-    if height != 600:
-        errors.append(u'Height is {} expecting 600'.format(height))
+    if width != context.width:
+        errors.append(u'With is {} expecting {}'.format(width, context.width))
+    if height != context.height:
+        errors.append(u'Height is {} expecting {}'.format(height, context.height))
 
     error_msgs = '\n'.join(errors)
 
