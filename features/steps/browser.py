@@ -26,4 +26,6 @@ def verify_resolution(context):
 
     error_msgs = '\n'.join(errors)
 
-    assert errors == [], error_msgs
+    # assert errors == [], error_msgs
+    if errors:
+        raise AssertionError(error_msgs)
