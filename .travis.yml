@@ -2,8 +2,13 @@
 
 language: python
 python:
-   # - "3.6"
-   - "3.7-dev"  # 3.7 development branch
+   - "3.6"
+
+env:
+  - MOZ_HEADLESS=1
+
+addons:
+  firefox: latest
 
 cache: pip
 install:
