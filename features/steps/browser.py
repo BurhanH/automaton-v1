@@ -23,7 +23,7 @@ def verify_resolution(context):
     errors = []
 
     if width != context.width:
-        errors.append(u'With is {} expecting {}'.format(width, context.width))
+        errors.append(u'Width is {} expecting {}'.format(width, context.width))
     if height != context.height:
         errors.append(u'Height is {} expecting {}'.format(height, context.height))
 
