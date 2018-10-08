@@ -5,6 +5,7 @@ env:
   - MOZ_HEADLESS=1
 addons:
   firefox: latest
+  chrome: stable
 
 python:
    - "3.6"
@@ -14,6 +15,11 @@ before_install:
   - mkdir geckodriver
   - tar -xzf geckodriver-v0.22.0-linux64.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
+
+  - wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
+  - mkdir chromedriver
+  - unzip chromedriver_linux64.zip -d chromedriver
+  - export PATH=$PATH:$PWD/chromedriver
 
 install:
    - pip install -r requirements.txt
