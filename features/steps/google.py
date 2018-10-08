@@ -4,7 +4,7 @@ from behave import *
 @when('user goes to google')
 def go_to(context):
     # Going to google.com
-    context.webdriver.get('https://www.google.com/')
+    context.webdriver.get('https://www.google.com')
 
 
 @then('user able to search by term')
