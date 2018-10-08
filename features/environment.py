@@ -1,8 +1,10 @@
 from selenium import webdriver
+WAIT_IMPL = 10
 
 
-def _create_webdriver(context):
-    context.webdriver = webdriver.Firefox()
+def _create_firefox(context):
+        context.webdriver = webdriver.Firefox()
+        context.webdriver.implicitly_wait(WAIT_IMPL)
 
 
 def _close_webdriver(context):
@@ -10,12 +12,17 @@ def _close_webdriver(context):
         context.webdriver.close()
 
 
+def before_tag(context, tag):
+    if tag == "firefox":
+        _create_firefox(context)
+
+
 def before_all(context):
     pass
 
 
 def before_feature(context, feature):
-    _create_webdriver(context)
+    pass
 
 
 def before_scenario(context, scenario):
@@ -31,11 +38,11 @@ def after_step(context, step):
 
 
 def after_scenario(context, scenario):
-    pass
+    _close_webdriver(context)
 
 
 def after_feature(context, feature):
-    _close_webdriver(context)
+    pass
 
 
 def after_all(context):
