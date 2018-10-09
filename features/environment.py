@@ -1,5 +1,6 @@
 from contextlib import contextmanager
 from selenium import webdriver
+
 WAIT_IMPL = 10
 WINDOW_SIZE = 1280, 1024
 
