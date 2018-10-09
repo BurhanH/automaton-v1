@@ -11,6 +11,8 @@ def go_to(context):
 def enter_term_and_click_search_button(context):
     # Searching for the input field by name and entering data
     context.webdriver.find_element_by_name('q').send_keys('python')
+    # Searching and waiting the search drop-down menu
+    context.webdriver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
     # Clicking Google Search button
     context.webdriver.find_element_by_css_selector("input[name='btnK']").click()
     # Verifying search results
