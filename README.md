@@ -7,22 +7,24 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Behave
 # Quick start!
 
 #### Requirements
-Python 3.6.\*, Selenium 3.14.0, Behave 1.2.6, virtualenv (virtual environment manager), 
-Firefox 62.\*, geckodriver 0.22, Chrome 69.\*, chromedriver 2.42 
+Python 3.6.\*, Selenium 3.14.0, Behave 1.2.6, <br>
+virtualenv (virtual environment manager), <br>
+Firefox 62.\*, geckodriver 0.22, <br>
+Chrome 69.\*, chromedriver 2.42 <br> 
 
 #### How to prepare environment
-1) Install Python - https://www.python.org/downloads/
-2) Install and configure virtualenv - https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
-3) Clone or copy (download) the repository into your virtual environment
-4) Activate virtual environment, move to `automaton-v1` folder, and execute command `pip install -r requirements.txt`
-5) Install Firefox / Chrome web browser
-6) Download, extract and move geckodriver / chromedriver into `bin` folder for Mac/Linux, `Scripts` folder for Windows on virtual environment
+1) Install Python - https://www.python.org/downloads/ <br>
+2) Install and configure virtualenv - https://packaging.python.org/guides/installing-using-pip-and-virtualenv/ <br>
+3) Clone or copy (download) the repository into your virtual environment <br>
+4) Activate virtual environment, move to `automaton-v1` folder, and execute command `pip install -r requirements.txt` <br>
+5) Install Firefox / Chrome web browser <br>
+6) Download, extract and move geckodriver / chromedriver into `bin` folder for Mac/Linux, `Scripts` folder for Windows on virtual environment <br>
 
 #### How to run tests
-1) Open terminal window
-2) Move to virtual environment folder
-3) Activate virtual environment 
-4) Move to `automaton-v1` folder
-5) Execute `behave`
+1) Open terminal window <br>
+2) Move to virtual environment folder <br>
+3) Activate virtual environment <br>
+4) Move to `automaton-v1` folder <br>
+5) Execute `behave` <br>
 
 To be continue ...
