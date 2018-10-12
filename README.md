@@ -13,7 +13,7 @@ Firefox 62.\*, geckodriver 0.22, <br>
 Chrome 69.\*, chromedriver 2.42 <br> 
 
 #### Project structure
-```markdown
+```
 -- automaton-v1
    |-- .gitattributes
    |-- .gitignore
