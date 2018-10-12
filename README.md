@@ -12,6 +12,26 @@ virtualenv (virtual environment manager), <br>
 Firefox 62.\*, geckodriver 0.22, <br>
 Chrome 69.\*, chromedriver 2.42 <br> 
 
+#### Project structure
+```markdown
+-- automaton-v1
+   |-- .gitattributes
+   |-- .gitignore
+   |-- .travis.yml
+   |-- LICENSE
+   |-- README.md
+   |-- requirements.txt
+   `-- features
+       |-- environment.py
+       |-- browser.feature
+       |-- google.feature
+       |-- tutorial.feature
+       `-- steps
+           |-- browser.py
+           |-- google.py
+           |-- tutorial.py
+```
+
 #### How to prepare environment
 1) Install Python - https://www.python.org/downloads/ <br>
 2) Install and configure virtualenv - https://packaging.python.org/guides/installing-using-pip-and-virtualenv/ <br>
