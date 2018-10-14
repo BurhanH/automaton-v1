@@ -16,5 +16,5 @@ def enter_term_and_click_search_button(context, target_text):
     # Clicking Google Search button
     context.webdriver.find_element_by_css_selector("input[name='btnK']").click()
     # Verifying search results
-    context.webdriver.find_element_by_class_name('bNg8Rb').is_displayed()
+    context.webdriver.find_element_by_css_selector('.bNg8Rb').is_displayed()
     # TODO Needs to add more verification/s
