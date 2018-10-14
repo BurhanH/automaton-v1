@@ -7,7 +7,7 @@ Feature: Search in Google
     Then user able to search by python term
 
   @firefox
-  Scenario Outline: Go to Google and try to search by different texts
+  Scenario Outline: Go to Google and try to search by different terms
     Given browser
     When user goes to google
     Then user able to search by <target_text> term
