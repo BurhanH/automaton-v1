@@ -46,8 +46,8 @@ Chrome 69.\*, chromedriver 2.42 <br>
 5) Execute `behave`
 
 ## How to run particular file / scenario
-1) `behave features/google.feature` for Mac / Linux or `behave features\google.feature` for Windows, will executes all scenarios in `google.feature` file  
-2) `behave features/google.feature:4` for Mac / Linux or `behave features\google.feature:4` for Windows, will executes the first scenario in `google.feature` file 
-3) `behave features/google.feature:17` for Mac / Linux or `behave features\google.feature:17` for Windows, will executes the second scenario with first parameter from Example table in `google.feature` file
+1) `behave features/google.feature` for Mac / Linux or `behave features\google.feature` for Windows, will execute all scenarios in `google.feature` file  
+2) `behave features/google.feature:4` for Mac / Linux or `behave features\google.feature:4` for Windows, will execute the first scenario in `google.feature` file 
+3) `behave features/google.feature:17` for Mac / Linux or `behave features\google.feature:17` for Windows, will execute the second scenario with the first parameter from Example table in `google.feature` file
 
 To be continue ...
