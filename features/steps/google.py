@@ -7,10 +7,10 @@ def go_to(context):
     context.webdriver.get('https://www.google.com')
 
 
-@then('user able to search by term')
-def enter_term_and_click_search_button(context):
+@then('user able to search by {target_text} text')
+def enter_term_and_click_search_button(context, target_text):
     # Searching for the input field by name and entering data
-    context.webdriver.find_element_by_name('q').send_keys('python')
+    context.webdriver.find_element_by_name('q').send_keys(target_text)
     # Searching and waiting the search drop-down menu
     context.webdriver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
     # Clicking Google Search button
