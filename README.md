@@ -51,6 +51,6 @@ Chrome 69.\*, chromedriver 2.42 <br>
 3) `behave features/google.feature:17` for Mac / Linux or `behave features\google.feature:17` for Windows, will execute the second scenario with the first parameter from Examples table in `google.feature` file
 
 ## How to run test/s in Chrome browser
-1) Go to any UI scenario and change the tag from `@firefox` to `@chrome`. Note! Before execution read the step 6 from [How to prepare environment](https://github.com/BurhanH/automaton-v1#how-to-prepare-environment) section
+1) Go to any UI scenario and change the tag from `@firefox` to `@chrome`. Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v1#how-to-prepare-environment) section
 
 To be continue ...
