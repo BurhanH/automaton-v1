@@ -6,10 +6,10 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Behave
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f7d510da5284321bfcdc5c290e25bdb)](https://www.codacy.com/app/BurhanH/automaton-v1?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BurhanH/automaton-v1&amp;utm_campaign=Badge_Grade)
 
 ## Requirements
-Python 3.6.\*, Selenium 3.14.0, Behave 1.2.6, <br>
+Python 3.6.\*, Selenium 3.141.0, Behave 1.2.6, <br>
 virtualenv (virtual environment manager), <br>
-Firefox 62.\*, geckodriver 0.22, <br>
-Chrome 69.\*, chromedriver 2.42 <br> 
+Firefox 64.\*, geckodriver 0.23, <br>
+Chrome 71.\*, chromedriver 2.45 <br> 
 
 ## Project structure
 ```text
