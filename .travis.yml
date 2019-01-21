@@ -7,7 +7,7 @@ env:
   - MOZ_HEADLESS=1
 addons:
   firefox: latest
-  # chrome: stable
+  chrome: stable
 
 python:
    - "3.7"
@@ -18,15 +18,15 @@ before_install:
   - tar -xzf geckodriver-v0.23.0-linux64.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
 
-  # TODO Chrome browser config
-  # - wget http://chromedriver.storage.googleapis.com/2.45/chromedriver_linux64.zip
-  # - mkdir chromedriver
-  # - unzip chromedriver_linux64.zip -d chromedriver
-  # - export PATH=$PATH:$PWD/chromedriver
-  # - google-chrome-stable --headless --disable-gpu
+  - wget http://chromedriver.storage.googleapis.com/2.45/chromedriver_linux64.zip
+  - mkdir chromedriver
+  - unzip chromedriver_linux64.zip -d chromedriver
+  - export PATH=$PATH:$PWD/chromedriver
+  - google-chrome-stable --headless --disable-gpu
 
 install:
    - pip install -r requirements.txt
 
 script:
     - behave
+    - behave -D browser=Chrome
