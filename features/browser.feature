@@ -1,6 +1,6 @@
 Feature: Browser resolution
 
-  Scenario Outline: Initiate Firefox and set resolution
+  Scenario Outline: Initiate browser and set resolution
     Given browser
     When browser set <resolution> resolution
     Then resolution is set
