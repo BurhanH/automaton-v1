@@ -44,8 +44,7 @@ Chrome 71.\*, chromedriver 2.45 <br>
 2) Move to virtual environment folder
 3) Activate virtual environment
 4) Move to `automaton-v1` folder
-5) Execute `behave`
-5.1) or for Chrome browser execute `behave -D browser=Chrome`
+5) Execute `behave` or for Chrome browser `behave -D browser=Chrome`
 
 ## How to run particular file or scenario
 1) `behave features/google.feature` for Mac / Linux or `behave features\google.feature` for Windows, will execute all scenarios in `google.feature` file  
