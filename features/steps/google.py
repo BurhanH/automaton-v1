@@ -24,7 +24,7 @@ def enter_term_and_click_search_button(context, target_text):
     menu = context.webdriver.find_element_by_css_selector('.FPdoLc.VlcLAe')
     menu.is_displayed()
     menu.is_enabled()
-    time.time(TIMEOUT)
+    time.sleep(TIMEOUT)
     # Clicking Google Search button
     search_btn = context.webdriver.find_element_by_css_selector("input[name='btnK']")
     search_btn.is_displayed()
