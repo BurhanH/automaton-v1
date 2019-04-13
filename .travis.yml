@@ -1,5 +1,6 @@
 os: linux
 dist: xenial
+
 language: python
 cache: pip
 
@@ -10,7 +11,8 @@ addons:
 #   chrome: stable
 
 python:
-   - "3.7"
+  - "3.6"
+  - "3.7"
 
 before_install:
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
