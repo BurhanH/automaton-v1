@@ -10,11 +10,19 @@ def go_to(context):
 @then('user able to search by {target_text} term')
 def enter_term_and_click_search_button(context, target_text):
     # Searching for the input field by name and entering data
-    context.webdriver.find_element_by_name('q').send_keys(target_text)
+    search_textfield = context.webdriver.find_element_by_name('q')
+    search_textfield.is_displayed()
+    search_textfield.is_enabled()
+    search_textfield.send_keys(target_text)
     # Searching and waiting the search drop-down menu
-    context.webdriver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
+    menu = context.webdriver.find_element_by_css_selector('.FPdoLc.VlcLAe')
+    menu.is_displayed()
+    menu.is_enabled()
     # Clicking Google Search button
-    context.webdriver.find_element_by_css_selector("input[name='btnK']").click()
+    search_btn = context.webdriver.find_element_by_css_selector("input[name='btnK']")
+    search_btn.is_displayed()
+    search_btn.is_enabled()
+    search_btn.click()
     # Verifying search results
     context.webdriver.find_element_by_css_selector('.bNg8Rb').is_displayed()
     # TODO Needs to add more verification/s
