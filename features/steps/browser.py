@@ -2,12 +2,12 @@ from behave import *
 
 
 @given('browser')
-def get_browser(context):
+def get_browser(context) -> None:
     pass
 
 
 @when('browser set {resolution} resolution')
-def set_resolution(context, resolution):
+def set_resolution(context, resolution) -> None:
     res_list = resolution.rsplit(',')
     context.width = int(res_list[0])
     context.height = int(res_list[1])
@@ -15,7 +15,7 @@ def set_resolution(context, resolution):
 
 
 @then('resolution is set')
-def verify_resolution(context):
+def verify_resolution(context) -> None:
     resolution = context.webdriver.get_window_size()
     width = resolution.get('width')
     height = resolution.get('height')

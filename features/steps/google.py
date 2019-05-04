@@ -7,13 +7,13 @@ TIMEOUT = 1  # in sec
 
 
 @when('user goes to google')
-def go_to(context):
+def go_to(context) -> None:
     # Going to google.com
     context.webdriver.get('https://www.google.com')
 
 
 @then('user able to search by {target_text} term')
-def enter_term_and_click_search_button(context, target_text):
+def enter_term_and_click_search_button(context, target_text: str) -> None:
     # Searching for the input field by name and entering data
     search_textfield = context.webdriver.find_element_by_name('q')
     search_textfield.is_displayed()

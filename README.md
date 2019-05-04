@@ -9,7 +9,7 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Behave
 Python 3.6.\*\/3.7.\*, Selenium 3.141.0, Behave 1.2.6, <br>
 virtualenv (virtual environment manager), <br>
 Firefox 66.\*, geckodriver 0.24, <br>
-Chrome 73.\*, chromedriver 73.0.3683.20 <br> 
+Chrome 75.\*, chromedriver 75.0.3770.8 <br> 
 
 ## Project structure
 ```text
