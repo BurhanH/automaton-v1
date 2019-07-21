@@ -17,15 +17,15 @@ def set_resolution(context, resolution: str) -> None:
 @then('resolution is set')
 def verify_resolution(context) -> None:
     resolution = context.webdriver.get_window_size()
-    width = resolution.get('width')
-    height = resolution.get('height')
+    width: int = resolution.get('width')
+    height: int = resolution.get('height')
 
-    errors = []
+    errors: list = []
 
     if width != context.width:
-        errors.append(u'Width is {} expecting {}'.format(width, context.width))
+        errors.append(f'Width is {width} expecting {context.width}')
     if height != context.height:
-        errors.append(u'Height is {} expecting {}'.format(height, context.height))
+        errors.append(f'Height is {height} expecting {context.height}')
 
     error_msgs = '\n'.join(errors)
 
