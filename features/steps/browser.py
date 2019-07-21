@@ -7,10 +7,10 @@ def get_browser(context) -> None:
 
 
 @when('browser set {resolution} resolution')
-def set_resolution(context, resolution) -> None:
-    res_list = resolution.rsplit(',')
-    context.width = int(res_list[0])
-    context.height = int(res_list[1])
+def set_resolution(context, resolution: str) -> None:
+    res_list: list = resolution.rsplit(',')
+    context.width: int = res_list[0]
+    context.height: int = res_list[1]
     context.webdriver.set_window_size(context.width, context.height)
 
 
