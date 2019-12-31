@@ -1,4 +1,4 @@
-from behave import *
+from behave import given, when, then
 
 
 def _check_failure(state):
