@@ -1,5 +1,5 @@
 # Automaton-v1
-Automation framework (UI) - an example. Based on Python, Selenium, and Behave
+Automation testing framework (UI) - an example. Based on Python, Selenium, and Behave
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v1/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v1.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v1)
