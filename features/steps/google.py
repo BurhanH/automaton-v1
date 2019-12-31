@@ -1,6 +1,6 @@
 import time
 
-from behave import *
+from behave import when, then
 from selenium.webdriver.common.keys import Keys
 
 # It's a bad practice
