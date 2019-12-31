@@ -8,8 +8,8 @@ Automation testing framework (UI) - an example. Based on Python, Selenium, and B
 ## Requirements
 Python 3.7.\*, Selenium 3.141.0, Behave 1.2.6, <br>
 virtualenv (virtual environment manager), <br>
-Firefox 70.\*, geckodriver 0.26.0, <br>
-Chrome 77.0.3865.120, chromedriver 77.0.3865.40 <br> 
+Firefox 71.*, geckodriver 0.26.0 <br>
+Chrome 79.0.3945.88, chromedriver 79.0.3945.88 <br>
 
 ## Project structure
 ```text
