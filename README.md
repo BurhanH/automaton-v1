@@ -53,7 +53,7 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69 <br>
 2) `behave features/google.feature:4` for Mac / Linux or `behave features\google.feature:4` for Windows, will execute the first scenario in `google.feature` file 
 3) `behave features/google.feature:17` for Mac / Linux or `behave features\google.feature:17` for Windows, will execute the second scenario with the first parameter from Examples table in `google.feature` file
 
-## Techology stack and helpful info
+## Technology stack and helpful info
 [Python 3.7](https://docs.python.org/3.7/) <br>
 [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) <br>
 [GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) <br>
