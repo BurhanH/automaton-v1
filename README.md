@@ -16,7 +16,6 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69 <br>
 -- automaton-v1
    |-- .gitattributes
    |-- .gitignore
-   |-- .travis.yml
    |-- LICENSE
    |-- README.md
    |-- requirements.txt
