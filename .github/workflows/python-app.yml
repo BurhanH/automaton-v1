@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: browser-actions/setup-geckodriver@latest
+    - run: geckodriver --version
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
