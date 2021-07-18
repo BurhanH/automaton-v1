@@ -1,7 +1,8 @@
-name: 'Test Report'
+name: Test Report
 on:
   workflow_run:
-    workflows: ['Python Selenium behave testing'] # runs after CI workflow
+    workflows:
+      - Python Selenium behave testing
     types:
       - completed
 jobs:
